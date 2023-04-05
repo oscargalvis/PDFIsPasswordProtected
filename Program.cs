@@ -8,12 +8,9 @@ namespace PDFIsPasswordProtected
         
         static void Main(string[] args)
         {
-            Console.WriteLine(DetectPDFPassword(@"/Users/mr.o/Toptal/doc1.pdf"));
-            Console.WriteLine();
-            Console.WriteLine(DetectPDFPassword(@"/Users/mr.o/Toptal/doc1-readonly.pdf"));
-            Console.WriteLine();
-            Console.WriteLine(DetectPDFPassword(@"/Users/mr.o/Toptal/doc1-protected.pdf"));
-            Console.WriteLine();
+            Console.WriteLine(DetectPDFPassword(@"doc1.pdf"));
+            Console.WriteLine(DetectPDFPassword(@"doc1-readonly.pdf"));
+            Console.WriteLine(DetectPDFPassword(@"doc1-protected.pdf"));
         }
 
         public static bool DetectPDFPassword(string pdfPath)
